@@ -62,15 +62,11 @@
               <div class="avatar avatar--small">
                 <img src="{{room.host.avatar.url}}" />
               </div>
-              <span>@{{room.host.username}}</span>
+              <span>{{room.host.name}}</span>
             </a>
           </div>
-          <!-- <div class="room__details">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, tenetur laudantium? Dicta repellendus
-            rerum consectetur, voluptatem repudiandae eum ea porro cupiditate provident nulla, deserunt, ab ipsum
-            corporis laboriosam deleniti molestias?
-          </div> -->
           <span class="room__topics">{{room.topic}}</span>
+          <h5 class="room__description">{{room.description}}</h5>
         </div>
 
         <div class="room__conversation">
@@ -85,7 +81,7 @@
                     <div class="avatar avatar--small">
                       <img src="{{message.user.avatar.url}}" />
                     </div>
-                    <span>@{{message.user.username}}</span>
+                    <span>{{message.user.name}}</span>
                   </a>
                   <span class="thread__date">{{message.created|timesince}} ago</span>
                 </div>
